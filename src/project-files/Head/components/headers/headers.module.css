@@ -1,0 +1,161 @@
+.blok {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.decor_textHead {
+  display: flex;
+  justify-content: space-between;
+  width: 252px;
+  height: 15px;
+  margin-left: 72px;
+  margin-top: 35px;
+  margin-right: 90px;
+}
+
+.decor_textHead p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 128%;
+  margin: 0;
+  font-size: 12px;
+  color: #999999;
+}
+
+.logo {
+  width: 172.72px;
+  height: 18px;
+  margin-top: 34px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.number {
+  width: 114px;
+  height: 20px;
+  margin: 34px -120px 0 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 128%;
+
+  color: #000000;
+}
+
+.header_nav_ico {
+  float: right;
+  display: flex;
+  margin: 34px 20px 0 0;
+}
+
+.header_nav_ico div {
+  margin-left: 24px;
+}
+
+.nav_link {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 532px;
+  height: 17px;
+  margin-top: 40px;
+}
+
+.nav_link a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 128%;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav_link a:focus {
+  border-bottom: 1px solid #000;
+}
+
+.discounts_advertising {
+  margin-top: 30px;
+  width: 100%;
+  height: 504px;
+  background-image: url("../../../../images/women.jpg");
+  background-position: 0 25%;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  padding-top: 220px;
+}
+
+.bg_decor svg {
+  position: absolute;
+  width: 550px;
+  top: 180px;
+}
+
+.text_actions {
+  width: 632px;
+  height: 90px;
+  margin-left: 70px;
+  display: flex;
+
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 128%;
+
+  color: #000000;
+}
+
+.text_actions p,
+.text_dostavka p {
+  margin: 0 10px 0 10px;
+  color: rgb(223, 0, 130);
+}
+
+.text_dostavka {
+  width: 390px;
+  height: 31px;
+  margin: 40px 0 0 70px;
+  display: flex;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 128%;
+
+  color: #000000;
+}
+
+.to_link {
+  width: 68px;
+  height: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 128%;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.to_link .button_is_headers {
+  width: 192px;
+  margin: 40px 0 0 70px;
+  padding: 10px 0 10px 0;
+
+  background: #000000;
+  border-radius: 2px;
+  align-items: center;
+  text-align: center;
+}

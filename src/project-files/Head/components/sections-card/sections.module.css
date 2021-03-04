@@ -1,0 +1,179 @@
+.cards {
+  display: flex;
+  margin-top: 50px;
+}
+
+.image_product {
+  z-index: 2;
+  width: 441px;
+  height: 514px;
+  background: url("../../../../images/girls_in_darcs_p.png");
+  background-size: 199%;
+  background-position: 62% 5%;
+  background-repeat: no-repeat;
+}
+
+.card {
+  margin-top: 80px;
+  margin-left: -120px;
+  width: 376px;
+  height: 228px;
+  padding: 0 38px 38px 38px;
+
+  color: #fff;
+  background: #000000;
+  border-radius: 2px 2px 20px 2px;
+  z-index: 2;
+}
+
+.card .title {
+  width: 103px;
+  height: 38px;
+
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 128%;
+
+  color: #ffffff;
+}
+
+.card .info {
+  width: 351px;
+  height: 54px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 128%;
+
+  color: #ffffff;
+}
+
+.card .price {
+  width: 129px;
+  height: 31px;
+  margin-right: 160px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 128%;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.scip_on_card,
+.nav_sections_card__left_button,
+.nav_sections_card__rigth_button,
+.focus_card {
+  display: flex;
+  justify-content: center;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  align-items: center;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.scip_on_card p,
+.nav_sections_card__left_button p,
+.nav_sections_card__rigth_button p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.pos_buttonANDprise {
+  display: flex;
+}
+
+.nav_sections_card {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  float: right;
+  margin-top: 80px;
+  margin-right: 109px;
+}
+
+.nav_sections_card__left_button,
+.nav_sections_card__rigth_button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.nav_sections_card__left_button {
+  margin-right: 46px;
+}
+
+.nav_sections_card__rigth_button {
+  padding: 0;
+  margin-left: 46px;
+  background: #000;
+}
+
+.pos_nav_sections_card {
+  display: flex;
+}
+
+.focus_card {
+  width: 6px;
+  height: 6px;
+  margin: 0 7px 0 7px;
+
+  background: #000;
+}
+
+.main_card_bg {
+  background: url("../../../../images/main_image_card.png");
+  background-position: 0% 45%;
+  background-repeat: no-repeat;
+  height: 554px;
+  width: 1076px;
+  margin: 0 auto;
+  margin-top: -300px;
+  opacity: 0.1;
+}
+
+.main_card {
+  display: flex;
+  margin-top: -554px;
+  height: 554px;
+}
+
+.main_card_img {
+  position: absolute;
+  right: 110px;
+}
+
+.main_card_logo {
+  position: absolute;
+  margin-top: 220px;
+  right: 400px;
+  width: 306px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+.main_card_logo img {
+  width: 100%;
+}
+
+.main_card_button {
+  position: absolute;
+  background: red;
+  width: 191px;
+  height: 40px;
+  margin-top: 500px;
+  z-index: 2;
+}
