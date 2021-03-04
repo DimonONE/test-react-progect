@@ -61,7 +61,7 @@ let Headers = () => {
                     <div className={style.text_dostavka}>Бесплатная доставка от <p>7 000 руб.</p> </div>
                     <div>
                         <NavLink className={style.to_link} to="/podrobnee">
-                            <div className={style.button_is_headers}>Подробнее </div>
+                            <div className={style.button_is_headers}>Подробнее</div>
                         </NavLink>
                     </div>
 

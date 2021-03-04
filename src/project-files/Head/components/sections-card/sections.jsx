@@ -8,11 +8,14 @@ let sections = () => {
         <div className={style.sections_card}>
             <div className={style.nav_sections_card}>
                 <div className={style.nav_sections_card__left_button}>
+                <NavLink to="/scip_nav_sections_l">
                     <p>
                         <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.82354 9.00416L9.64554 1.18216C9.91595 0.911709 9.91595 0.473235 9.64554 0.20278C9.37504 -0.0675934 8.93661 -0.0675934 8.66615 0.20278L0.354468 8.51447C0.0840943 8.78492 0.0840943 9.2234 0.354468 9.49385L8.66615 17.8055C8.94132 18.0713 9.37979 18.0637 9.64554 17.7885C9.90475 17.5201 9.90475 17.0945 9.64554 16.8262L1.82354 9.00416Z" fill="black"/>
                         </svg>
                     </p>
+                </NavLink> 
+
                 </div>
                 <div className={style.pos_nav_sections_card}>
                     <div className={style.focus_card}></div>
@@ -20,11 +23,14 @@ let sections = () => {
                     <div className={style.focus_card}></div>
                 </div>
                 <div className={style.nav_sections_card__rigth_button}>
-                    <p>
-                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.17647 9.00416L0.35447 1.18216C0.0840559 0.911709 0.0840559 0.473235 0.35447 0.20278C0.624965 -0.0675934 1.0634 -0.0675934 1.33385 0.20278L9.64554 8.51447C9.91591 8.78492 9.91591 9.2234 9.64554 9.49385L1.33385 17.8055C1.05869 18.0713 0.620216 18.0637 0.35447 17.7885C0.0952568 17.5201 0.0952568 17.0945 0.35447 16.8262L8.17647 9.00416Z" fill="white"/>
-                        </svg>
-                    </p>
+                    
+                    <NavLink to="/scip_nav_sections_r">
+                        <p>
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.17647 9.00416L0.35447 1.18216C0.0840559 0.911709 0.0840559 0.473235 0.35447 0.20278C0.624965 -0.0675934 1.0634 -0.0675934 1.33385 0.20278L9.64554 8.51447C9.91591 8.78492 9.91591 9.2234 9.64554 9.49385L1.33385 17.8055C1.05869 18.0713 0.620216 18.0637 0.35447 17.7885C0.0952568 17.5201 0.0952568 17.0945 0.35447 16.8262L8.17647 9.00416Z" fill="white"/>
+                            </svg>
+                        </p>
+                    </NavLink> 
                 </div>
             </div>
             <div className={style.cards}>
@@ -36,16 +42,17 @@ let sections = () => {
                     <div className={style.pos_buttonANDprise}>
                     <p className={style.price}>от 99 495 ₽</p>
                     <div className={style.scip_on_card}>
-                    <p>
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.11764 6.00277L0.902975 0.788109C0.722699 0.607806 0.722699 0.31549 0.902975 0.135187C1.0833 -0.0450622 1.37559 -0.0450622 1.5559 0.135187L7.09702 5.67631C7.27727 5.85662 7.27727 6.14893 7.09702 6.32923L1.5559 11.8704C1.37246 12.0475 1.08014 12.0424 0.902975 11.859C0.730166 11.68 0.730166 11.3964 0.902975 11.2174L6.11764 6.00277Z" fill="white"/>
-                        </svg>
-                    </p>
+                        <NavLink to="/sckip_on_card_one">
+                            <p>
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.11764 6.00277L0.902975 0.788109C0.722699 0.607806 0.722699 0.31549 0.902975 0.135187C1.0833 -0.0450622 1.37559 -0.0450622 1.5559 0.135187L7.09702 5.67631C7.27727 5.85662 7.27727 6.14893 7.09702 6.32923L1.5559 11.8704C1.37246 12.0475 1.08014 12.0424 0.902975 11.859C0.730166 11.68 0.730166 11.3964 0.902975 11.2174L6.11764 6.00277Z" fill="white"/>
+                                </svg>
+                            </p>
+                        </NavLink>
                     </div>
                 </div>
                 </div>
             </div>
-            
             <div className={style.main_card_bg}></div>
             <div className={style.main_card}>
                 <div className={style.main_card_img}>
@@ -58,10 +65,35 @@ let sections = () => {
                 <div className={style.main_card_logo}><img src={logo} alt="logo"/></div>
                 <div className={style.main_card_button}>
                     <NavLink to="/to_on_catalog">
-                         <div>Перейти в каталог</div>
+                         Перейти в каталог
                     </NavLink> 
                 </div>
             </div>
+            <div className={style.cards_rigth}>
+                <div className={style.cards}>
+                    <div className={style.image_product}></div>
+                        <div className={style.card}>
+                            <p className={style.title}>Свитера и Джемперы</p>
+                            <p className={style.info}>В современном мире моды известны десятки вариантов 
+                            лаконичных платьев на каждый день, в которых есть своя изюминка. </p>
+                            <div className={style.pos_buttonANDprise}>
+                            <p className={style.price}>от 1 485 ₽</p>
+                            <div className={style.scip_on_card}>
+                                <NavLink to="/sckip_on_card_two">
+                                    <p>
+                                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.11764 6.00277L0.902975 0.788109C0.722699 0.607806 0.722699 0.31549 0.902975 0.135187C1.0833 -0.0450622 1.37559 -0.0450622 1.5559 0.135187L7.09702 5.67631C7.27727 5.85662 7.27727 6.14893 7.09702 6.32923L1.5559 11.8704C1.37246 12.0475 1.08014 12.0424 0.902975 11.859C0.730166 11.68 0.730166 11.3964 0.902975 11.2174L6.11764 6.00277Z" fill="white"/>
+                                        </svg>
+                                    </p>
+                                </NavLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={style.text_big_assortements}>Большой ассортимент одежды для милых дам</div>
+
         </div>
     )   
 }
