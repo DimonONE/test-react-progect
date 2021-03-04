@@ -23,7 +23,6 @@ let sections = () => {
                     <div className={style.focus_card}></div>
                 </div>
                 <div className={style.nav_sections_card__rigth_button}>
-                    
                     <NavLink to="/scip_nav_sections_r">
                         <p>
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
