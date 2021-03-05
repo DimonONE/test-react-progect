@@ -1,11 +1,8 @@
 import style from "./headers.module.css"
-import logo from "../../../../images/logo.png"
-
 import { NavLink } from "react-router-dom";
 
 
-
-let Headers = () => {
+let Headers = (props) => {
     return(
         <div>
             <div  className={style.blok}>
@@ -13,7 +10,7 @@ let Headers = () => {
                     <p>Доставка и оплата</p>   
                     <p>Возврат и обмен</p> 
                 </div>
-                <div className={style.logo}> <img src={logo} alt=""/> </div>
+                <div className={style.logo}> <img src={props.logo} alt=""/> </div>
                 <div className={style.number}>8 800 200 7242</div>
                 <div className={style.header_nav_ico}>
                     <div>  

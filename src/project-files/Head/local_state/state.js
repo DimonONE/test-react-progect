@@ -74,7 +74,7 @@ let State = {
     ],
 
     posts:[
-        {img: imgs_1},
+        {img: post_img_1_png},
         {img: post_img_2_png},
         {img: post_img_3_png},
         {img: post_img_4_png},

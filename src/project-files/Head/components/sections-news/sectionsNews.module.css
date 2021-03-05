@@ -123,13 +123,6 @@
   text-decoration: none;
 }
 
-.see_more button_see_more {
-  font-family: Roboto;
-  font-size: 13px;
-  line-height: 128%;
-  color: #000000;
-}
-
 .see_more_to {
   margin-top: 700px;
 }
@@ -238,4 +231,71 @@
   height: 100%;
 
   border-radius: 2px;
+}
+
+/* hover animations */
+.card_hovers {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.the_basket {
+  margin-top: 220px;
+}
+
+.the_basket button {
+  width: 160px;
+  height: 40px;
+
+  color: #fff;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.buy_one_click button {
+  width: 160px;
+  height: 40px;
+  margin-top: 10px;
+
+  background: #ffffff;
+  opacity: 0.8;
+}
+
+.link_details {
+  width: 68px;
+  height: 17px;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 128%;
+  text-decoration-line: underline;
+
+  color: #000000;
+}
+
+.element_block_news:hover .card_hovers {
+  display: block;
+  width: 282px;
+  height: 380px;
+  text-align: center;
+}
+
+.pos_hover_item {
+  left: 13px;
+  margin: 13px;
+}
+
+.element_block_news img:hover {
+  opacity: 0.2;
+}
+
+.item_pos {
+  position: absoluyte;
+  float: right;
 }

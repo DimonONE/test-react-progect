@@ -1,9 +1,8 @@
 import style from "./sections.module.css"
-import logo from "../../../../images/logo.png"
 import { NavLink } from "react-router-dom";
 
 
-let sections = () => {
+let sections = (props) => {
     return(
         <div className={style.sections_card}>
             <div className={style.nav_sections_card}>
@@ -61,7 +60,7 @@ let sections = () => {
                     <path d="M91.3677 106.965C93.8512 108.166 96.3025 109.4 98.7215 110.633L106.043 114.366C110.913 116.866 115.784 119.366 120.719 121.735C121.331 122.028 121.944 122.32 122.589 122.612C123.202 122.904 123.847 123.164 124.46 123.456C125.718 124.008 126.976 124.495 128.266 125.014C130.814 126.021 133.394 126.962 135.974 127.871C141.135 129.689 146.328 131.377 151.553 133C146.296 131.507 141.038 129.916 135.845 128.228C133.233 127.384 130.653 126.507 128.072 125.566C126.782 125.079 125.492 124.625 124.234 124.105C123.589 123.845 122.976 123.586 122.331 123.294C121.686 123.034 121.073 122.742 120.46 122.45C115.461 120.177 110.559 117.742 105.624 115.34C100.721 112.938 95.8187 110.471 90.8517 108.198L91.3677 106.965Z" fill="black"/>
                     </svg>
                 </div>
-                <div className={style.main_card_logo}><img src={logo} alt="logo"/></div>
+                <div className={style.main_card_logo}><img src={props.logo} alt="logo"/></div>
                 <div className={style.main_card_button}>
                     <NavLink to="/to_on_catalog">
                          Перейти в каталог
