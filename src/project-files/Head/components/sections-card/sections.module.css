@@ -169,30 +169,6 @@
   width: 100%;
 }
 
-.main_card_button {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background: #000;
-  width: 191px;
-  height: 40px;
-  margin: 470px 0 0 193px;
-
-  text-align: center;
-  align-items: center;
-}
-
-.main_card_button a {
-  text-decoration: none;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 128%;
-  color: #ffffff;
-}
-
 .cards_rigth {
   margin-top: -320px;
   float: right;
@@ -227,4 +203,9 @@
   font-size: 30px;
   line-height: 128%;
   color: #000000;
+}
+
+.__card_button_position {
+  position: absolute;
+  margin: 470px 0 0 193px;
 }

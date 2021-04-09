@@ -1,0 +1,115 @@
+.element_block_news {
+  display: block;
+  width: 282px;
+  text-align: center;
+  font-family: Roboto;
+  color: #c4c4c4;
+}
+.element_block_news .card_hovers {
+  display: none;
+}
+.element_block_news .card .images {
+  width: 282px;
+  height: 380px;
+}
+.element_block_news .card .images img {
+  width: 100%;
+  height: 100%;
+}
+.element_block_news .poduct_info {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+.element_block_news .text_dostavka {
+  height: 17px;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 13px;
+}
+.element_block_news .position_text {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.element_block_news .text_discount {
+  width: 48px;
+  height: 18px;
+  margin-right: 20px;
+  margin-left: -40px;
+  font-size: 14px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.element_block_news .text_price {
+  width: 35%;
+  height: 23px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 128%;
+  color: #000000;
+}
+
+.element_block_news:hover .card_hovers {
+  position: absolute;
+  display: block;
+  width: 282px;
+  height: 380px;
+  text-align: center;
+  z-index: 1;
+}
+.element_block_news:hover .card_hovers .pos_hover_item {
+  cursor: pointer;
+  left: 13px;
+  margin: 13px;
+}
+.element_block_news:hover .card_hovers .like_button:hover {
+  cursor: pointer;
+}
+.element_block_news:hover .card_hovers .item_pos {
+  float: right;
+}
+.element_block_news:hover .card_hovers .the_basket {
+  margin-top: 220px;
+}
+.element_block_news:hover .card_hovers .the_basket button,
+.element_block_news:hover .card_hovers .buy_one_click button {
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+}
+.element_block_news:hover .card_hovers .the_basket button:focus,
+.element_block_news:hover .card_hovers .buy_one_click button:focus {
+  outline: none;
+}
+.element_block_news:hover .card_hovers .the_basket button {
+  color: #fff;
+  background: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.element_block_news:hover .card_hovers .buy_one_click button {
+  color: #000;
+  margin-top: 10px;
+  background: #ffffff;
+  opacity: 0.8;
+}
+.element_block_news:hover .card_hovers .link_details {
+  width: 68px;
+  height: 17px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 128%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+.element_block_news:hover .images {
+  opacity: 0.3;
+}

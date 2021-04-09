@@ -49,6 +49,7 @@
 }
 
 .header_nav_ico {
+  height: 23px;
   float: right;
   display: flex;
   margin: 34px 20px 0 0;
@@ -56,6 +57,24 @@
 
 .header_nav_ico div {
   margin-left: 24px;
+}
+
+.like_item {
+  cursor: pointer;
+}
+
+.like_Count,
+.basket_Count {
+  position: absolute;
+  padding: 1px;
+  margin: -13px 0 0 7px;
+  background: rgb(255, 0, 0);
+  min-width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .nav_link {
@@ -93,7 +112,7 @@
   padding-top: 220px;
 }
 
-.bg_decor svg {
+.bg_decor {
   position: absolute;
   width: 550px;
   top: 180px;
@@ -125,37 +144,16 @@
   height: 31px;
   margin: 40px 0 0 70px;
   display: flex;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 128%;
-
   color: #000000;
 }
 
-.to_link {
-  width: 68px;
-  height: 20px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 128%;
-  text-decoration: none;
-
-  color: #ffffff;
-}
-
-.to_link .button_is_headers {
+.__card_button_position {
+  position: relative;
   width: 192px;
   margin: 40px 0 0 70px;
-  padding: 10px 0 10px 0;
-
-  background: #000000;
-  border-radius: 2px;
-  align-items: center;
-  text-align: center;
 }

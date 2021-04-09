@@ -1,5 +1,6 @@
 import style from "./sections.module.css"
 import { NavLink } from "react-router-dom";
+import { Button } from "../../../../common/Button/Button";
 
 
 let sections = (props) => {
@@ -61,10 +62,8 @@ let sections = (props) => {
                     </svg>
                 </div>
                 <div className={style.main_card_logo}><img src={props.logo} alt="logo"/></div>
-                <div className={style.main_card_button}>
-                    <NavLink to="/to_on_catalog">
-                         Перейти в каталог
-                    </NavLink> 
+                <div className={style.__card_button_position}>
+                    <Button text={"Перейти в каталог"} />
                 </div>
             </div>
             <div className={style.cards_rigth}>
@@ -89,9 +88,7 @@ let sections = (props) => {
                     </div>
                 </div>
             </div>
-
             <div className={style.text_big_assortements}>Большой ассортимент одежды для милых дам</div>
-
         </div>
     )   
 }
