@@ -1,5 +1,4 @@
 import style from "./footer.module.css"
-import { NavLink } from "react-router-dom";
 
 let Footer = (props) => {
     return(
@@ -19,15 +18,13 @@ let Footer = (props) => {
                     <p>г. Москва, м. Автозаводская, ТРЦ Ривьера, 2 этаж</p>
                     <h4>+7 965 307 92 83</h4>
                 </div>
-                <div className={style.get_discount}>
+                <form className={style.get_discount}>
                     <h2>ПОЛУЧИТЕ СКИДКУ 1000 РУБ НА ПЕРВЫЙ ЗАКАЗ</h2>
                     <input plaseholder="Введите Email" />
-                    <div className={style.see_more}>
-                        <NavLink to="get_discount">
-                            <p>Получить скидку</p>
-                        </NavLink>
+                    <div>
+                        <button className={style.see_more} > <p> Получить скидку</p></button>
                     </div>
-                </div>
+                </form>
             </div>
             <div className={style.block_buttons}>
                 <div className={style.nav_info_f}>

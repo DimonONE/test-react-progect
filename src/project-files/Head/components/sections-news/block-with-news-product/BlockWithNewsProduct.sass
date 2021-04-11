@@ -1,5 +1,6 @@
 .element_block_news
-    display: block
+    display: inline-block
+    margin: 0 auto 50px auto
     width: 282px
     text-align: center
     font-family: Roboto
@@ -73,25 +74,32 @@
         .item_pos
             float: right
 
+        .bg_red,
         .the_basket
             margin-top: 220px
 
+        .bg_red button,
         .the_basket button,
         .buy_one_click button
             cursor: pointer
             width: 160px
             height: 40px
 
+        .bg_red button:focus,
         .the_basket button:focus,
         .buy_one_click button:focus
             outline: none
 
+        .bg_red button,
         .the_basket button
             color: #fff
             background: #000000
             border: 1px solid #000000
             box-sizing: border-box
             border-radius: 2px
+
+        .bg_red button
+            background: #a50a0a
 
         .buy_one_click button
             color: #000
@@ -104,10 +112,41 @@
             height: 17px
             margin: 0 auto
             margin-top: 20px
-            font-size: 13px
-            line-height: 128%
-            text-decoration-line: underline
-            color: #000000
+
+            a
+                color: #000000
+                font-size: 13px
+                line-height: 128%
+                text-decoration-line: underline
 
     .images
         opacity: 0.3
+
+.full_window
+    width: 100%
+    height: 100vh
+    position: fixed
+    display: flex
+    align-items: center
+    z-index: 2
+    top: 0
+    left: 0
+    right: 0
+    background: #00000062
+
+    .window__full_img
+        display: flex
+        align-items: center
+        margin: 0 auto
+        max-height: 80%
+        background: #000
+
+    .exit_img
+        position: absolute
+        right: 15px
+        top: 15px
+
+    .conttainer_img
+        height: 700px
+        img
+            height: 100%

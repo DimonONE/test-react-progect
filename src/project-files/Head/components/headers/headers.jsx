@@ -8,8 +8,6 @@ import { useGlobalState } from "../../../../createState/Store";
 let Headers = (props) => {
     const [countLike] = useGlobalState('countLike')
     const [countTheBasket] = useGlobalState('countTheBasket')
-    const [newsProduct] = useGlobalState('newsProduct')
-    console.log(newsProduct);
     return(
         <div>
             <div  className={style.blok}>

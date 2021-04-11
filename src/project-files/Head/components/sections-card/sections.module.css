@@ -70,6 +70,7 @@
 .nav_sections_card__left_button,
 .nav_sections_card__rigth_button,
 .focus_card {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   right: -50px;

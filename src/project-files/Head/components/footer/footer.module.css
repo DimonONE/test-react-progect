@@ -93,19 +93,13 @@
 }
 
 .see_more {
-  text-align: center;
+  cursor: pointer;
   border: 1px solid rgb(255, 255, 255);
-
-  width: 104px;
-  height: 17px;
+  min-width: 114px;
+  min-height: 17px;
   margin-top: 28px;
-  padding: 7px 25px 7px 25px;
-}
-
-.see_more a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0;
+  padding: 7px 20px;
+  background: #000;
 }
 
 .see_more p {
@@ -115,6 +109,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 128%;
+  color: rgb(255, 255, 255);
 }
 
 .block_buttons {
@@ -132,22 +127,16 @@
   width: 100%;
   height: 20px;
   margin-bottom: 20px;
-
   font-weight: bold;
   font-size: 16px;
   line-height: 128%;
-
   color: #ffffff;
 }
 
 .nav_info_f p {
+  cursor: pointer;
   width: 204px;
   margin-top: 1px;
-
-  /* font-weight: normal;
-  font-size: 14px;
-  line-height: 24px; */
   color: #ffffff;
-
   opacity: 0.5;
 }

@@ -32,8 +32,9 @@
 }
 
 .block_with_newsProduct {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
+  padding: 0 10px;
   margin-top: 112px;
   max-height: 100%;
 }

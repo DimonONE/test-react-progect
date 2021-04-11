@@ -7,6 +7,7 @@ import SectionsCard from "./components/sections-card/sections"
 import {SectionNews} from "./components/sections-news/sectionsNews"
 import Footer from "./components/footer/footer"
 
+
 let Head = (props) => {
     return(
         <div className={style.head}>

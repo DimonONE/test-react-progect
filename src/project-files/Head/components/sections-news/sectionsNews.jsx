@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useState }  from 'react';
 
 import style from "./sectionsNews.module.css"
 import { ButtonSeeMore } from '../../../../common/Button/Button';
@@ -7,8 +7,12 @@ import { BlockWithNewsProduct } from './block-with-news-product/BlockWithNewsPro
 import { useGlobalState } from '../../../../createState/Store';
 
 export const SectionNews = (props) => {
-    const [newsProduct] = useGlobalState('newsProduct')
+    let [newsProduct] = useGlobalState('newsProduct')
     const [discountProducts] = useGlobalState('discountProducts')
+
+    const count = 4
+    let [countPost, setCountPost] = useState(count)
+
 
     return(
         <div className={style.section_news}>
@@ -18,16 +22,19 @@ export const SectionNews = (props) => {
                         <p className={style.text_news}>Новинки</p>
                     </div>
                     <div className={style.block_with_newsProduct}>
-                        {newsProduct.map( newProduct =>
+                        {newsProduct.map( newProduct => countPost >= newProduct.id &&
                             <BlockWithNewsProduct key={newProduct.id} poduct_info={newProduct.poduct_info} 
                             text_discount={newProduct.text_discount} text_dostavka={newProduct.text_dostavka}
                             price={newProduct.price} imgs={newProduct.img} 
-                            followLike={newProduct.followLike}
-                        />)}
+                            followLike={newProduct.followLike}/>
+                        )}
                     </div>
                 </div>
                 <div className={`${style.see_more}`}>
-                        <ButtonSeeMore />
+                    {countPost < newsProduct.length &&
+                        <span onClick={() => {setCountPost(countPost + count)}}>
+                            <ButtonSeeMore />
+                        </span>}
                 </div>
             </div>
 

@@ -4,6 +4,16 @@ import { NavLink } from "react-router-dom";
 import { useGlobalState } from '../../../../../createState/Store';
 import like from '../../../../../images/like_favorite_heart.png'
 import likeActive from '../../../../../images/heart_icon-active.png'
+import cancel from '../../../../../images/cancelButton.png'
+
+const FullImg = (props) => {
+    return <div className={style.window__full_img}>
+                <button onClick={() => props.setFullIMG(false)} className={style.exit_img}><img src={cancel} alt=""/></button>
+                <div className={style.conttainer_img}>
+                   <img src={props.img} alt=""/> 
+                </div>
+            </div>
+}
 
 export const BlockWithNewsProduct = (props) => {
     const [likeFolowing, setLike] = useState(false)
@@ -12,12 +22,14 @@ export const BlockWithNewsProduct = (props) => {
     const [inTheBasket, setTheBasket] = useState(false)
     let [countTheBasket, setBasket] = useGlobalState('countTheBasket')
 
+    const [fullIMG, setFullIMG] = useState(false)
+    
     return(
             <div className={style.element_block_news}>
                 <div className={style.card_hovers}>
                     <div className={style.item_pos}>
                         <div className={style.pos_hover_item}>
-                            <span onClick={ () => alert("открить")}>
+                            <span onClick={ () => setFullIMG(true) }>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 1V0H0.5C0.223844 0 0 0.223844 0 0.5V4H1V1.705L5.645 6.35L6.35 5.645L1.705 1H4Z" fill="black"/>
                                 <path d="M15.5 0H12V1H14.295L9.64999 5.645L10.355 6.35L15 1.705V4H16V0.5C16 0.223844 15.7761 0 15.5 0Z" fill="black"/>
@@ -25,6 +37,7 @@ export const BlockWithNewsProduct = (props) => {
                                 <path d="M5.645 9.64502L1 14.295V12H0V15.5C0 15.7762 0.223844 16 0.5 16H4V15H1.705L6.35 10.355L5.645 9.64502Z" fill="black"/>
                                 </svg>
                             </span>
+                            
                         </div>
                         <div className={style.pos_hover_item}>
                             <span onClick={() => {
@@ -34,7 +47,7 @@ export const BlockWithNewsProduct = (props) => {
                             </span>
                         </div>
                     </div>
-                    <div className={style.the_basket}>
+                    <div className={!inTheBasket ? style.the_basket : style.bg_red}>
                         <button onClick={ () => {
                                 setTheBasket(!inTheBasket)
                                 setBasket(!inTheBasket ? ++countTheBasket : --countTheBasket)
@@ -48,6 +61,9 @@ export const BlockWithNewsProduct = (props) => {
                             Подробнее
                         </NavLink>
                     </div>
+                </div>
+                <div className={fullIMG ? style.full_window : undefined}>
+                    {fullIMG && <FullImg img={props.imgs} setFullIMG={setFullIMG}/>}    
                 </div>
                 
                 <div className={style.card}>
@@ -63,6 +79,7 @@ export const BlockWithNewsProduct = (props) => {
                         <div className={style.text_price}>{props.price}</div>
                     </div>
                 </div>
+                
             </div>
     )
 }

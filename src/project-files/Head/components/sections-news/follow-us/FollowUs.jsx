@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 import { useGlobalState } from '../../../../../createState/Store';
 import style from "./FollowUs.module.css"
 
@@ -25,13 +24,11 @@ export const FollowUs = (props) => {
 
             <div className={style.nav_posts} >
                 <div className={style.nav_sections_card__left_button}>
-                    <NavLink to="/scip_nav_sections_l">
                         <p>
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82354 9.00416L9.64554 1.18216C9.91595 0.911709 9.91595 0.473235 9.64554 0.20278C9.37504 -0.0675934 8.93661 -0.0675934 8.66615 0.20278L0.354468 8.51447C0.0840943 8.78492 0.0840943 9.2234 0.354468 9.49385L8.66615 17.8055C8.94132 18.0713 9.37979 18.0637 9.64554 17.7885C9.90475 17.5201 9.90475 17.0945 9.64554 16.8262L1.82354 9.00416Z" fill="black"/>
                             </svg>
                         </p>
-                    </NavLink> 
                 </div>
                 <div className={style.post_content}>
                     <div className={style.posts}>
@@ -44,13 +41,11 @@ export const FollowUs = (props) => {
                     </div>
                 </div>
                 <div className={style.nav_sections_card__rigth_button}>
-                    <NavLink to="/scip_nav_sections_r">
                         <p>
                             <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.17647 9.00416L0.35447 1.18216C0.0840559 0.911709 0.0840559 0.473235 0.35447 0.20278C0.624965 -0.0675934 1.0634 -0.0675934 1.33385 0.20278L9.64554 8.51447C9.91591 8.78492 9.91591 9.2234 9.64554 9.49385L1.33385 17.8055C1.05869 18.0713 0.620216 18.0637 0.35447 17.7885C0.0952568 17.5201 0.0952568 17.0945 0.35447 16.8262L8.17647 9.00416Z" fill="white"/>
                             </svg>
                         </p>
-                    </NavLink> 
                 </div>
             </div>
         </>

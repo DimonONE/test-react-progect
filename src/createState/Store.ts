@@ -63,6 +63,54 @@ const initialState = {
                     followLike: false,
                     inTheBasket:false,
 
+                },
+
+                { 
+                    id:5,
+                    img: imgs_4,
+                    poduct_info:"Рубашка оверсайз в клеточку с рукавом",
+                    text_dostavka:"Доставку по России мы осуществляем",
+                    text_discount:"2 075 ₽",
+                    price:"99 495 ₽",
+                    followLike: false,
+                    inTheBasket:false,
+
+                },
+
+                { 
+                    id:6,
+                    img: imgs_4,
+                    poduct_info:"Рубашка оверсайз в клеточку с рукавом",
+                    text_dostavka:"Доставку по России мы осуществляем",
+                    text_discount:"2 075 ₽",
+                    price:"99 495 ₽",
+                    followLike: false,
+                    inTheBasket:false,
+
+                },
+
+                { 
+                    id:7,
+                    img: imgs_4,
+                    poduct_info:"Рубашка оверсайз в клеточку с рукавом",
+                    text_dostavka:"Доставку по России мы осуществляем",
+                    text_discount:"2 075 ₽",
+                    price:"99 495 ₽",
+                    followLike: false,
+                    inTheBasket:false,
+
+                },
+
+                { 
+                    id:8,
+                    img: imgs_4,
+                    poduct_info:"Рубашка оверсайз в клеточку с рукавом",
+                    text_dostavka:"Доставку по России мы осуществляем",
+                    text_discount:"2 075 ₽",
+                    price:"99 495 ₽",
+                    followLike: false,
+                    inTheBasket:false,
+
                 }
         ],
 

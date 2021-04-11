@@ -6,11 +6,11 @@ import { NavLink } from "react-router-dom";
 
 export const Button = (props) => {
     return(
-        <div className={style.__card_button}>
             <NavLink to="/to_on_catalog">
-                {props.text}
+                <div className={style.__card_button}>
+                    {props.text}
+                </div>
             </NavLink> 
-        </div>
     )
 }
 

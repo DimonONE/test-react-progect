@@ -1,5 +1,6 @@
 .element_block_news {
-  display: block;
+  display: inline-block;
+  margin: 0 auto 50px auto;
   width: 282px;
   text-align: center;
   font-family: Roboto;
@@ -73,25 +74,32 @@
 .element_block_news:hover .card_hovers .item_pos {
   float: right;
 }
+.element_block_news:hover .card_hovers .bg_red,
 .element_block_news:hover .card_hovers .the_basket {
   margin-top: 220px;
 }
+.element_block_news:hover .card_hovers .bg_red button,
 .element_block_news:hover .card_hovers .the_basket button,
 .element_block_news:hover .card_hovers .buy_one_click button {
   cursor: pointer;
   width: 160px;
   height: 40px;
 }
+.element_block_news:hover .card_hovers .bg_red button:focus,
 .element_block_news:hover .card_hovers .the_basket button:focus,
 .element_block_news:hover .card_hovers .buy_one_click button:focus {
   outline: none;
 }
+.element_block_news:hover .card_hovers .bg_red button,
 .element_block_news:hover .card_hovers .the_basket button {
   color: #fff;
   background: #000000;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 2px;
+}
+.element_block_news:hover .card_hovers .bg_red button {
+  background: #a50a0a;
 }
 .element_block_news:hover .card_hovers .buy_one_click button {
   color: #000;
@@ -104,12 +112,45 @@
   height: 17px;
   margin: 0 auto;
   margin-top: 20px;
+}
+.element_block_news:hover .card_hovers .link_details a {
+  color: #000000;
   font-size: 13px;
   line-height: 128%;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #000000;
 }
 .element_block_news:hover .images {
   opacity: 0.3;
+}
+
+.full_window {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #00000062;
+}
+.full_window .window__full_img {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-height: 80%;
+  background: #000;
+}
+.full_window .exit_img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.full_window .conttainer_img {
+  height: 700px;
+}
+.full_window .conttainer_img img {
+  height: 100%;
 }
