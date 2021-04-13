@@ -1,0 +1,53 @@
+.sectionNews {
+  display: block;
+  width: 100%;
+  line-height: 128%;
+  font-style: normal;
+}
+
+.containet_news {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.sectionDiscount {
+  margin-bottom: 900px;
+}
+
+.text_news_pos {
+  width: 100%;
+  display: flex;
+}
+
+.text_news {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 48px;
+  width: 154px;
+  height: 46px;
+  align-items: center;
+  font-family: Georgia;
+  font-size: 36px;
+  color: #000000;
+}
+
+.block_with_newsProduct {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0 10px;
+  margin-top: 112px;
+  max-height: 100%;
+}
+
+.nav_posts,
+.pos_nav_sections_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see_more {
+  display: flex;
+  margin-top: 42px;
+  justify-content: center;
+}

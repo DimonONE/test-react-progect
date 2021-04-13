@@ -1,0 +1,41 @@
+.__card_button {
+  display: flex;
+  justify-content: center;
+  background: #000;
+  width: 192px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.__card_button:hover {
+  background: rgba(49, 49, 49, 0.397);
+}
+
+a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 128%;
+  color: #ffffff;
+}
+
+.see_more button {
+  display: block;
+  cursor: pointer;
+  border: 1px solid black;
+  background: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 13px;
+  color: #000000;
+}
+.see_more p {
+  margin: 0;
+  text-align: center;
+}
+.__card_button:focus,
+.see_more button:focus {
+  outline: none;
+}

@@ -1,0 +1,152 @@
+.element_block_news
+    display: inline-block
+    margin: 0 auto 50px auto
+    width: 282px
+    text-align: center
+    font-family: Roboto
+    color: #c4c4c4
+
+    .card_hovers
+        display: none
+
+    .card
+        .images
+            width: 282px
+            height: 380px
+
+            img
+                width: 100%
+                height: 100%
+
+    .poduct_info
+        width: 90%
+        height: 40px
+        margin: 0 auto
+        margin-top: 10px
+        font-weight: normal
+        font-size: 16px
+        color: #000000
+
+    .text_dostavka
+        height: 17px
+        margin-top: 10px
+        font-weight: 300
+        font-size: 13px
+
+    .position_text
+        display: flex
+        justify-content: center
+        margin: 10px
+
+    .text_discount
+        width: 48px
+        height: 18px
+        margin-right: 20px
+        margin-left: -40px
+        font-size: 14px
+        text-decoration-line: line-through
+
+    .text_price
+        width: 35%
+        height: 23px
+        font-weight: bold
+        font-size: 18px
+        line-height: 128%
+        color: #000000
+
+.element_block_news:hover
+    .card_hovers
+        position: absolute
+        display: block
+        width: 282px
+        height: 380px
+        text-align: center
+        z-index: 1
+
+        .pos_hover_item
+            cursor: pointer
+            left: 13px
+            margin: 13px
+
+        .like_button:hover
+            cursor: pointer
+
+        .item_pos
+            float: right
+
+        .bg_red,
+        .the_basket
+            margin-top: 220px
+
+        .bg_red button,
+        .the_basket button,
+        .buy_one_click button
+            cursor: pointer
+            width: 160px
+            height: 40px
+
+        .bg_red button:focus,
+        .the_basket button:focus,
+        .buy_one_click button:focus
+            outline: none
+
+        .bg_red button,
+        .the_basket button
+            color: #fff
+            background: #000000
+            border: 1px solid #000000
+            box-sizing: border-box
+            border-radius: 2px
+
+        .bg_red button
+            background: #a50a0a
+
+        .buy_one_click button
+            color: #000
+            margin-top: 10px
+            background: #ffffff
+            opacity: 0.8
+
+        .link_details
+            width: 68px
+            height: 17px
+            margin: 0 auto
+            margin-top: 20px
+
+            a
+                color: #000000
+                font-size: 13px
+                line-height: 128%
+                text-decoration-line: underline
+
+    .images
+        opacity: 0.3
+
+.full_window
+    width: 100%
+    height: 100vh
+    position: fixed
+    display: flex
+    align-items: center
+    z-index: 2
+    top: 0
+    left: 0
+    right: 0
+    background: #00000062
+
+    .window__full_img
+        display: flex
+        align-items: center
+        margin: 0 auto
+        max-height: 80%
+        background: #000
+
+    .exit_img
+        position: absolute
+        right: 15px
+        top: 15px
+
+    .conttainer_img
+        height: 700px
+        img
+            height: 100%
