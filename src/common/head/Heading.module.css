@@ -1,0 +1,11 @@
+.text_title {
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 279px;
+  height: 46px;
+  text-align: center;
+
+  font-family: Georgia;
+  font-size: 36px;
+  line-height: 128%;
+}

@@ -5,6 +5,7 @@ import { ButtonSeeMore } from '../../../../Button/Button';
 import { FollowUs } from './follow-us/FollowUs';
 import { BlockWithNewsProduct } from './block-with-news-product/BlockWithNewsProduct';
 import { useGlobalState } from '../../../../createState/Store';
+import { Heading } from "../../../../common/head/Heading"
 
 export const SectionNews: React.FC = (props) => {
     let [newsProduct] = useGlobalState('newsProduct')
@@ -19,7 +20,7 @@ export const SectionNews: React.FC = (props) => {
             <div className={style.containet_news}>
                 <div className={style.sectionNews}>
                     <div className={style.text_news_pos} >
-                        <p className={style.text_news}>Новинки</p>
+                        <Heading text="Новинки"/>
                     </div>
                     <div  className={style.block_with_newsProduct }>
                         {newsProduct.map( (newProduct) => countPost >= newProduct.id &&
@@ -36,11 +37,9 @@ export const SectionNews: React.FC = (props) => {
                    
                 </div>
             </div>
-
-
             <div className={style.containet_news}>
                 <div className={style.sectionNews}>
-                    <div className={style.text_news}>Скидки</div>
+                    <Heading text="Скидки"/>
                     <div className={style.block_with_newsProduct}>
                         {discountProducts.map( newProduct =>
                                 <BlockWithNewsProduct key={newProduct.id} poduct_info={newProduct.poduct_info} 
