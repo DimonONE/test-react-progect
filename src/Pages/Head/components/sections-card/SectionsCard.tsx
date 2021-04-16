@@ -1,7 +1,7 @@
 import style from "./sections.module.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../../../Button/Button";
-
+import { Bounce, Slide } from "react-awesome-reveal";
 
 export const SectionsCard: React.FC<PropsType> = (props) => {
     return(
@@ -15,7 +15,6 @@ export const SectionsCard: React.FC<PropsType> = (props) => {
                         </svg>
                     </p>
                 </span> 
-
                 </div>
                 <div className={style.pos_nav_sections_card}>
                     <div className={style.focus_card}></div>
@@ -35,11 +34,11 @@ export const SectionsCard: React.FC<PropsType> = (props) => {
             <div className={style.cards}>
                 <div className={style.image_product}></div>
                 <div className={style.card}>
-                    <p className={style.title}>Платья</p>
-                    <p className={style.info}>В современном мире моды известны десятки вариантов лаконичных платьев на каждый день,
-                    в которых есть своя изюминка. </p>
+                <Slide direction={"left"}><p className={style.title}>Платья</p></Slide>
+                <Slide direction={"right"}><p className={style.info}>В современном мире моды известны десятки вариантов лаконичных платьев на каждый день,
+                    в которых есть своя изюминка. </p></Slide>
                     <div className={style.pos_buttonANDprise}>
-                    <p className={style.price}>от 99 495 ₽</p>
+                    <Bounce><p className={style.price}>от 99 495 ₽</p></Bounce>
                     <div className={style.scip_on_card}>
                         <NavLink to="/sckip_on_card_one">
                             <p>
@@ -70,11 +69,11 @@ export const SectionsCard: React.FC<PropsType> = (props) => {
                 <div className={style.cards}>
                     <div className={style.image_product}></div>
                         <div className={style.card}>
-                            <p className={style.title}>Свитера и Джемперы</p>
-                            <p className={style.info}>В современном мире моды известны десятки вариантов 
-                            лаконичных платьев на каждый день, в которых есть своя изюминка. </p>
+                            <Slide direction={"right"}><p className={style.title}>Свитера и Джемперы</p></Slide>
+                            <Slide><p className={style.info}>В современном мире моды известны десятки вариантов 
+                            лаконичных платьев на каждый день, в которых есть своя изюминка. </p></Slide>
                             <div className={style.pos_buttonANDprise}>
-                            <p className={style.price}>от 1 485 ₽</p>
+                            <Bounce><p className={style.price}>от 1 485 ₽</p></Bounce>
                             <div className={style.scip_on_card}>
                                 <NavLink to="/sckip_on_card_two">
                                     <p>

@@ -83,6 +83,19 @@
   color: #ffffff;
 }
 
+.get_discount .get_discount__label {
+  width: 280px;
+  height: 48px;
+  display: block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
 .get_discount input {
   width: 412px;
   height: 40px;

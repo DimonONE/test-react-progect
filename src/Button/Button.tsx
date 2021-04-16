@@ -14,11 +14,11 @@ export const Button: React.FC<ButtonPropsType> = (props) => {
     )
 }
 
-export const ButtonSeeMore: React.FC = (props) => {
+export const ButtonSeeMore: React.FC<ButtonPropsType> = (props) => {
     return(
         <div className={`${style.see_more}  ${style.__card_button}`}>
             <button className={`${style.__card_button}`}>
-                <p>Посмотреть еще</p>
+                <p>{props.text}</p>
             </button>
         </div>
     )

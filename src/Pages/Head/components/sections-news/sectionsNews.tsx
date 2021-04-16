@@ -13,6 +13,7 @@ export const SectionNews: React.FC = (props) => {
     const count: number = 4
     let [countPost, setCountPost] = useState<number>(count)
 
+    const isPostProductCount = countPost < newsProduct.length
     return(
         <div className={style.section_news}>
             <div className={style.containet_news}>
@@ -20,22 +21,22 @@ export const SectionNews: React.FC = (props) => {
                     <div className={style.text_news_pos} >
                         <p className={style.text_news}>Новинки</p>
                     </div>
-                    <div className={style.block_with_newsProduct}>
-                        {newsProduct.map( newProduct => (countPost >= newProduct.id) &&
-                            <BlockWithNewsProduct key={newProduct.id} poduct_info={newProduct.poduct_info} 
-                            text_discount={newProduct.text_discount} text_dostavka={newProduct.text_dostavka}
-                            price={newProduct.price} imgs={newProduct.img} 
-                            followLike={newProduct.followLike}/>
+                    <div  className={style.block_with_newsProduct }>
+                        {newsProduct.map( (newProduct) => countPost >= newProduct.id &&
+                                        <BlockWithNewsProduct key={newProduct.id} poduct_info={newProduct.poduct_info}
+                                        text_discount={newProduct.text_discount} text_dostavka={newProduct.text_dostavka}
+                                        price={newProduct.price} imgs={newProduct.img} followLike={newProduct.followLike}/>
                         )}
                     </div>
                 </div>
                 <div className={`${style.see_more}`}>
-                    {countPost < newsProduct.length &&
-                        <span onClick={() => {setCountPost(countPost + count)}}>
-                            <ButtonSeeMore />
-                        </span>}
+                    {<span onClick={() => {setCountPost(isPostProductCount ? (countPost + count) : count)}}>
+                        <ButtonSeeMore text={isPostProductCount ? "Посмотреть еще" : "Скрыть"} />
+                    </span>}
+                   
                 </div>
             </div>
+
 
             <div className={style.containet_news}>
                 <div className={style.sectionNews}>
@@ -45,8 +46,7 @@ export const SectionNews: React.FC = (props) => {
                                 <BlockWithNewsProduct key={newProduct.id} poduct_info={newProduct.poduct_info} 
                                 text_dostavka={newProduct.text_dostavka} text_discount={newProduct.text_discount}
                                 price={newProduct.price} imgs={newProduct.img}
-                                followLike={newProduct.followLike}
-                            />)}
+                                followLike={newProduct.followLike}/> )}
                     </div>
                 </div>
             </div>
@@ -56,5 +56,4 @@ export const SectionNews: React.FC = (props) => {
         </div>
     )
 }
-
 

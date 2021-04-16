@@ -1,6 +1,11 @@
+import React, { useState } from "react"
 import style from "./footer.module.css"
 
 export const Footer: React.FC<PropsType> = (props) => {
+    const [email, setEmail] = useState('')
+    const emailChange = (event:React.ChangeEvent<HTMLInputElement>) => {
+        setEmail(event.target.value)
+    }
     return(
         <div className={style.footer}>
             <div className={style.block_up}>
@@ -18,11 +23,13 @@ export const Footer: React.FC<PropsType> = (props) => {
                     <p>г. Москва, м. Автозаводская, ТРЦ Ривьера, 2 этаж</p>
                     <h4>+7 965 307 92 83</h4>
                 </div>
-                <form className={style.get_discount}>
-                    <h2>ПОЛУЧИТЕ СКИДКУ 1000 РУБ НА ПЕРВЫЙ ЗАКАЗ</h2>
-                    <input placeholder="Введите Email" />
+                <form className={style.get_discount} >
+                    <label className={style.get_discount__label} htmlFor="email">ПОЛУЧИТЕ СКИДКУ 1000 РУБ НА ПЕРВЫЙ ЗАКАЗ</label>
+                    <input onChange={emailChange} value={email} id="email" placeholder="Введите Email" />
                     <div>
-                        <button className={style.see_more} > <p> Получить скидку</p></button>
+                        {/* Кнопка не активна */}
+                        {console.warn("Кнопка не активна")}
+                        <button disabled className={style.see_more} > <p> Получить скидку</p></button>
                     </div>
                 </form>
             </div>

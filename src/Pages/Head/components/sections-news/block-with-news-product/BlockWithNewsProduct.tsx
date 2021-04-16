@@ -6,12 +6,16 @@ import like from '../../../../../images/like_favorite_heart.png'
 import likeActive from '../../../../../images/heart_icon-active.png'
 import cancel from '../../../../../images/cancelButton.png'
 
-const FullImg = (p: FIPropsType) => {
+import { Bounce, Slide, Fade, Zoom } from "react-awesome-reveal";
+
+const FullImg = (props: FIPropsType) => {
     return <div className={style.window__full_img}>
-                <button onClick={() => p.setFullIMG(false)} className={style.exit_img}><img src={cancel} alt=""/></button>
-                <div className={style.conttainer_img}>
-                   <img src={p.img} alt=""/> 
-                </div>
+                <button onClick={() => props.setFullIMG(false)} className={style.exit_img}><img src={cancel} alt=""/></button>
+                <Zoom>
+                    <div className={style.conttainer_img}>
+                        <img src={props.img} alt=""/> 
+                    </div>
+                </Zoom>
             </div>
 }
 
@@ -24,7 +28,8 @@ export const BlockWithNewsProduct: React.FC<PropsType> = (props) => {
 
     const [fullIMG, setFullIMG] = useState<boolean>(false)
     
-    return(
+    
+    return( 
             <div className={style.element_block_news}>
                 <div className={style.card_hovers}>
                     <div className={style.item_pos}>
@@ -47,15 +52,18 @@ export const BlockWithNewsProduct: React.FC<PropsType> = (props) => {
                             </span>
                         </div>
                     </div>
-                    <div className={!inTheBasket ? style.the_basket : style.bg_red}>
-                        <button onClick={ () => {
-                                setTheBasket(!inTheBasket)
-                                setBasket(!inTheBasket ? ++countTheBasket : --countTheBasket)
-                            }}>{!inTheBasket ? 'В корзину' : 'Удалить'}</button>
-                    </div>
-                    <div className={style.buy_one_click}>
-                        <button>Купить в 1 клик</button>
-                    </div>
+                    <Fade>
+                        <div className={!inTheBasket ? style.the_basket : style.bg_red}>
+                            <button onClick={ () => {
+                                    setTheBasket(!inTheBasket)
+                                    setBasket(!inTheBasket ? ++countTheBasket : --countTheBasket)
+                                }}>{!inTheBasket ? 'В корзину' : 'Удалить'}</button>
+                        </div>
+                        <div className={style.buy_one_click}>
+                            <button>Купить в 1 клик</button>
+                        </div>
+                    </Fade>
+
                     <div className={style.link_details}>
                         <NavLink to="#">
                             Подробнее
@@ -65,27 +73,27 @@ export const BlockWithNewsProduct: React.FC<PropsType> = (props) => {
                 <div className={fullIMG ? style.full_window : undefined}>
                     {fullIMG && <FullImg img={props.imgs} setFullIMG={setFullIMG}/>}    
                 </div>
-                
+                <Bounce>
                 <div className={style.card}>
                     <div className={style.images}>                        
                         <img src={props.imgs} alt=""/>
                     </div>
                     <div>
-                        <div className={style.poduct_info}>{props.poduct_info}</div>
+                         <div className={style.poduct_info}>{props.poduct_info}</div>
                         <div className={style.text_dostavka}>{props.text_dostavka}</div>
                     </div>
                     <div className={style.position_text}>
                         <div className={style.text_discount}>{props.text_discount}</div>
-                        <div className={style.text_price}>{props.price}</div>
+                        <div className={style.text_price}><Slide direction={"up"} >{props.price}</Slide></div>
                     </div>
                 </div>
-                
+                </Bounce>
             </div>
     )
 }
 
 type PropsType = {
-    key:number,
+    // key:number,
     poduct_info:string,
     text_dostavka:string,
     text_discount:string,

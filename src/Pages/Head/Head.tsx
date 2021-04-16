@@ -8,6 +8,7 @@ import { SectionNews } from "./components/sections-news/sectionsNews"
 import { Footer } from "./components/footer/footer"
 
 
+
 export const Head: React.FC = (props:PropsType) => {
     return(
         <div className={style.head}>
